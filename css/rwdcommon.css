@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 1174px) {
+    .row { width: 100%; margin:0 auto;
+        padding-left: 10px; padding-right: 10px;
+    }
+    #header .topmenu {
+        border-bottom: 1px solid #ececec;
+        font-size: 13px;
+        height: 39px;
+        background: #fff;
+    }
+    #header .topmenu .member {
+        position: absolute;
+        top:0; right: 0;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    #header .logoNavWrap { 
+        border-bottom: 1px solid #ececec;
+        background: #fff;
+        box-shadow: 0 3px 2px 0 rgba(0,0,0,.03);
+    }
+    .logoNav { 
+        position: relative; 
+        height: auto;
+    }
+    .logoNav .logo { padding-top: 18.5px; text-align: center;}
+    .logoNav .nav {
+        position: static;
+        top: 0; right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .logoNav .nav .depth1 > li {
+        display: inline-block;
+        position: relative;
+    }
+    .logoNav .nav .depth1 > li > a {
+        display: block;
+        font-size: 15px;
+        color: #3d3d3d;
+        padding: 0 20px 10px;
+        margin-top: 27px;
+        letter-spacing: 1px;
+        font-family: 'Inconsolata';
+    }
+    .logoNav .nav .depth1 > li:hover > a {
+        color: #173762;
+        transition: all 0.5s;
+    }
+    
+    .logoNav .nav .depth2 {
+        position: absolute;
+        top: 100%; left: 10px;
+        width: 200px;
+        background: #fbfbfb;
+        display: none;
+    }
+    .logoNav .nav .depth2 > li > a {
+        display: block;
+        font-family: 'Inconsolata';
+        font-size: 15px;
+        color: #666;
+        padding: 15px;
+        margin: 0 5px;
+        border-bottom: 1px solid #f0f0f0;
+        transition: all 0.5s;
+    }
+    .logoNav .nav .depth1 > li:hover > .depth2 {
+        display: block;
+    }
+    .logoNav .nav .depth2 > li > a:hover {
+        /* color: #173762; */
+        color: blue;
+    }
+}
+
+@media only screen and (max-width:710px) {
+    .topmenu .email { padding: 13px 0; display: none;}
+    .logoNav .logo { 
+        padding-top: 18.5px; text-align: center;
+        padding-bottom: 18.5px;
+    }
+    .logoNav .nav {
+        position: static;
+        top: 0; right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .logoNav .open_nav { 
+        display: block;
+        position: absolute;
+        top: 50%; right: 20px;
+        transform: translateY(-50%);
+        font-size: 30px;
+    }
+    .logoNav .close_nav { 
+        display: none; 
+        position: absolute;
+        top: 50%; right: 20px;
+        transform: translateY(-50%);
+        font-size: 30px;
+    }
+}
